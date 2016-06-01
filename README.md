@@ -12,7 +12,7 @@ Clone the repo and install:
 
 ```shell
 $ git clone https://github.com/jooj123/react-talk.git reacttalk
-$ cd reacttalk
+$ cd reacttalk/part1
 $ npm install                   # install packages (might take a while)
 ```
 
