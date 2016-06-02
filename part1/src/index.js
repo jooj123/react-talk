@@ -1,20 +1,20 @@
 // rendering examples
-// require('./render/non-es6.js');
+require('./render/non-es6.js');
 // require('./render/es6.js');
 // require('./render/no-jsx.js');
 
 
-const React = require('react');
-const ReactDOM = require('react-dom');
+// const React = require('react');
+// const ReactDOM = require('react-dom');
 
 
 // render a react component (component lifecycle / props/ state)
-import HelloWorld from './components/HelloWorld.js';
+// import HelloWorld from './components/HelloWorld.js';
 
-ReactDOM.render(
-  <HelloWorld name="martin" />,
-  document.getElementById('main')
-);
+// ReactDOM.render(
+//   <HelloWorld name="martin" />,
+//   document.getElementById('main')
+// );
 
 
 

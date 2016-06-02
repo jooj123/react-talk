@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PhotoCell from './PhotoCell.js';
+import PhotoSummary from './PhotoSummary.js';
 
 class PhotoList extends Component {
 
@@ -19,8 +20,19 @@ class PhotoList extends Component {
   render() {
     let summary = '';
     if (this.props.showSummary) {
-      summary = (<p>{this.props.photos.length} Results Found.</p>);
+      summary = (
+        <div>
+          <PhotoSummary length={this.props.photos.length} style={{'fontWeight': 'bold'}} />
+        </div>
+      );
     }
+
+     // summary = (
+     //    <div>
+     //      <PhotoSummary length={this.props.photos.length} style={{'fontWeight': 'bold'}} />
+     //      <PhotoSummary length={this.props.photos.length} style={{'color': 'red'}} />
+     //    </div>
+     //  );
 
     return (
       <div>
