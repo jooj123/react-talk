@@ -5,7 +5,6 @@ class HelloWorld extends Component {
 
   static propTypes = {
     name: React.PropTypes.string,
-    stuff: React.PropTypes.string,
   };
 
   static defaultProps = {
@@ -66,9 +65,6 @@ class HelloWorld extends Component {
         <h1>
           Hello {this.props.name} World: {this.state.counter}
         </h1>
-        <p>
-          {this.props.stuff}
-        </p>
         <input type="button" onClick={this.increment} defaultValue="Increment" />
       </div>
     );

@@ -13,7 +13,7 @@ const ReactDOM = require('react-dom');
 
 // ReactDOM.render(
 //   <div>
-//     <HelloWorld name="fsfsdf" stuff="sdfsd" />
+//     <HelloWorld name="martin" />
 //   </div>,
 //   document.getElementById('main')
 // );
