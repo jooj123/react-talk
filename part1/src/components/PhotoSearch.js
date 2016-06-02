@@ -110,7 +110,7 @@ class PhotoSearch extends Component {
             value={this.state.search}
             style={styles.input}
             onChange={this.search} />
-          <input type="button" value="Submit" style={styles.button} />
+          <input type="button" value="Submit" style={styles.button} onClick={this.submit} />
         </form>
         <PhotoList photos={this.state.results} showSummary={this.state.searched} />
         {loading}

@@ -5,10 +5,11 @@ class HelloWorld extends Component {
 
   static propTypes = {
     name: React.PropTypes.string,
+    stuff: React.PropTypes.string,
   };
 
   static defaultProps = {
-    name: '',
+    name: 'bob',
   };
 
   constructor() {
@@ -38,7 +39,8 @@ class HelloWorld extends Component {
     console.log('Next Props: ', nextProps);
     console.log('Next State: ', nextState);
 
-    return nextState.counter % 2;
+    // return nextState.counter % 2;
+    return true;
   }
 
   componentWillUpdate() {
@@ -64,6 +66,9 @@ class HelloWorld extends Component {
         <h1>
           Hello {this.props.name} World: {this.state.counter}
         </h1>
+        <p>
+          {this.props.stuff}
+        </p>
         <input type="button" onClick={this.increment} defaultValue="Increment" />
       </div>
     );

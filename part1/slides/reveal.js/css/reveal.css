@@ -1335,3 +1335,7 @@ html:-moz-full-screen-ancestor {
   width: 100% !important;
   height: 100% !important;
 }
+
+.smaller {
+  font-size:0.7em !important;
+}
